@@ -1,11 +1,16 @@
-import React from 'react';
+import Link from 'next/link';
 
 const Header: React.FC = () => {
   return (
-    <header>
-      <h1>My Website</h1>
-      <nav>
-        <a href="/">Home</a> | <a href="/posts">Posts</a> | <a href="/users">Users</a>
+    <header className="bg-gray-800 p-4 text-white">
+      <nav className="container mx-auto flex justify-between">
+        <div className="text-lg font-bold">
+          <Link href="/">ALX Project</Link>
+        </div>
+        <div className="space-x-4">
+          <Link href="/posts">Posts</Link>
+          <Link href="/users">Users</Link>
+        </div>
       </nav>
     </header>
   );
