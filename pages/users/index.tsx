@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Header from "@/components/layout/Header";
 import UserCard from "@/components/common/UserCard";
 import UserModal from "@/components/common/UserModal";
@@ -30,10 +31,26 @@ const Users: React.FC<{ posts: UserProps[] }> = ({ posts }) => {
       {isModalOpen && (
         <UserModal onClose={() => setModalOpen(false)} onSubmit={handleAddUser} />
       )}
+=======
+import React from 'react';
+
+const UsersPage: React.FC = () => {
+  const users = ['Alice', 'Bob', 'Charlie'];
+
+  return (
+    <div>
+      <h1>Users</h1>
+      <ul>
+        {users.map((user, index) => (
+          <li key={index}>{user}</li>
+        ))}
+      </ul>
+>>>>>>> 148ea2dbf4ee435579da07149f7e566a0ef24001
     </div>
   );
 };
 
+<<<<<<< HEAD
 export async function getStaticProps() {
   const response = await fetch("https://jsonplaceholder.typicode.com/users");
   const posts = await response.json();
@@ -41,3 +58,6 @@ export async function getStaticProps() {
 }
 
 export default Users;
+=======
+export default UsersPage;
+>>>>>>> 148ea2dbf4ee435579da07149f7e566a0ef24001

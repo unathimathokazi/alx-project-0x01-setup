@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Header from "@/components/layout/Header";
 
 const Home: React.FC = () => {
@@ -20,5 +21,14 @@ const Home: React.FC = () => {
     </div>
   )
 }
+=======
+const Home: React.FC = () => {
+  return (
+    <div className="flex justify-center items-center h-screen">
+      <h1 className="text-7xl font-thin">Welcome Page</h1>
+    </div>
+  );
+};
+>>>>>>> 148ea2dbf4ee435579da07149f7e566a0ef24001
 
 export default Home;

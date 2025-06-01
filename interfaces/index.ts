@@ -4,6 +4,7 @@ export interface PostProps {
   title: string;
   body: string;
 }
+<<<<<<< HEAD
 
 export interface UserProps {
   id: number;
@@ -69,3 +70,5 @@ export interface UserModalProps {
   onClose: () => void;
   onSubmit: (user: UserData) => void;
 }
+=======
+>>>>>>> 148ea2dbf4ee435579da07149f7e566a0ef24001
